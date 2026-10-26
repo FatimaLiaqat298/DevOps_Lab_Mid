@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
 
@@ -8,6 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                echo 'Code checked out from GitHub'
                 checkout scm
             }
         }
@@ -37,3 +39,4 @@ pipeline {
         }
     }
 }
+
